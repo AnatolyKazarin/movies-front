@@ -3,15 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: rgba(9, 53, 69, 1);
+  --foreground: rgba(255, 255, 255, 1);
+  --input: rgba(34, 73, 87, 1);
 }
 
 body {
@@ -24,4 +18,31 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/*Ant Components*/
+.ant-input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: white !important;
+}
+
+.ant-checkbox-input .ant-checkbox-inner {
+  background-color: rgba(34, 73, 87, 1);
+  border-color: rgba(34, 73, 87, 1);
+}
+
+.ant-pagination li.ant-pagination-item {
+  background-color: rgba(9, 44, 57, 1);
+}
+
+.ant-pagination li.ant-pagination-item a {
+  color: white
+}
+
+.ant-pagination li.ant-pagination-item.ant-pagination-item-active {
+  background-color: rgba(43, 209, 126, 1);
+  border-color: rgba(43, 209, 126, 1)
 }
